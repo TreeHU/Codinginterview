@@ -6,6 +6,8 @@ using namespace std;
 
 
 /* 풀의 문자열에 중복이 있는지 확인하는 문제
+
+// 시간 복잡도 O(n^2), 공간 복잡도 O(1)
 bool main() {
 
 
@@ -31,6 +33,9 @@ bool main() {
 
 }*/
 
+
+// 해설
+// 시간 복잡도 O(1), 공간 복잡도 O(1)
 bool isUniqueChars(const string &str) {
 	if (str.length() > 128) {
 		return false;
