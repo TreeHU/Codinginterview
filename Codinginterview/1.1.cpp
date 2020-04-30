@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
+#include <vector>
+
 using namespace std;
 
 
-
-
-
+/* 풀의 문자열에 중복이 있는지 확인하는 문제
 bool main() {
 
 
@@ -29,4 +29,32 @@ bool main() {
 
 	return true;
 
+}*/
+
+bool isUniqueChars(const string &str) {
+	if (str.length() > 128) {
+		return false;
+	}
+	vector<bool> char_set(128);
+	for (int i = 0; i < str.length(); i++) {
+		int val = str[i];
+		cout << val << endl;
+		if (char_set[val]) {
+			return false;
+		}
+		char_set[val] = true;
+
+	}
+
+	return true;
 }
+
+bool main() {
+	string st = "asdfgaa";
+	bool result = "";
+	result = isUniqueChars(st);
+
+	cout << result << endl;
+}
+
+                                                 
