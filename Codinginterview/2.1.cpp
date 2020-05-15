@@ -62,17 +62,53 @@ struct Node {
 };
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void insert(Node * &head, int data) {
 	Node* newNode = new Node;
+	cout << "newNode:" << newNode << endl;
+	cout << "head:" << head << endl;
+	cout<<' ' << endl;
 	newNode->data = data;
 	newNode->next = head;
+	cout << "newNode:" << newNode << endl;
+	cout << "head:" << head << endl;
+	cout << ' ' << endl;
 	head = newNode;
+	cout << "newNode:" << newNode << endl;
+	cout << "head:" << head << endl;
+	cout << ' ' << endl;
+
+	cout << "newNode->next:" << newNode->next << endl;
+	cout << "head->next:" << head->next << endl;
+	cout << ' ' << endl;
 }
+
+
+
+
+
+
 
 
 void printList(Node* head) {
 	while (head) {
-		cout << head->data << "-->";
+		//cout << "&head;" << head << endl;
+		//cout << "&head: " << head << ":" << head->data << "-->";
 		head = head->next;
 	}
 	cout << "nullptr" << endl;
@@ -127,12 +163,13 @@ int main() {
 	printList(head);
 
 	*/
+	cout << head << endl;
 	insert(head, 1);
 	insert(head, 2);
 	insert(head, 2);
-	insert(head, 4);
+	//insert(head, 4);
 	printList(head);
-	removeDuplicates(head);
-	printList(head);
+	//removeDuplicates(head);
+	//printList(head);
 	return 0;
 }

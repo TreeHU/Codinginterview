@@ -60,5 +60,11 @@
     <ClCompile Include="2.5_해설.cpp">
       <Filter>소스 파일\chapter 2</Filter>
     </ClCompile>
+    <ClCompile Include="2.6.cpp">
+      <Filter>소스 파일\chapter 2</Filter>
+    </ClCompile>
+    <ClCompile Include="2.6_풀의.cpp">
+      <Filter>소스 파일\chapter 2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
