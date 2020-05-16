@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\chapter 2">
       <UniqueIdentifier>{ef9ae8fd-9de6-4b32-87e9-755ec5a06b8c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chapter 3">
+      <UniqueIdentifier>{5bbc8192-b846-4bf9-9e22-6f80e4ec8195}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.1.cpp">
@@ -66,5 +69,16 @@
     <ClCompile Include="2.6_풀의.cpp">
       <Filter>소스 파일\chapter 2</Filter>
     </ClCompile>
+    <ClCompile Include="3.1.cpp">
+      <Filter>소스 파일\chapter 3</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter_3_test.cpp">
+      <Filter>소스 파일\chapter 3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3.1_FixedMultiStack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
