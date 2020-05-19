@@ -57,8 +57,26 @@ int getHeight(Node* root) {
 }
 
 
+bool isBST(Node* root, int min, int max) {
+	if (root == NULL) {
+		return true;
+	}
+	if (root->data < min || root->data > max) {
+		return false;
+	}
 
+	return (isBST(root->left, min, root->data - 1) && isBST(root->right, root->data - 1, max));
+}
 
+bool validateBST(Node* root, int min, int max) {
+	if (root == nullptr) {
+		return true;
+	}
+	if (root->data < min || root->data > max) {
+		return false;
+	}
+	return validateBST(root->left, min, root->data - 1) && validateBST(root->right, root->data - 1, max);
+}
 
 int main()
 {
@@ -69,7 +87,7 @@ int main()
 	Node * root = makeTree(arr);
 	preOrder(root);
 	cout <<"height:" << getHeight(root) << endl;
-
+	cout << validateBST(root, INT_MIN, INT_MAX) << endl;
 	return 0;
 
 }
