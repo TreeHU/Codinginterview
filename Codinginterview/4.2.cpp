@@ -33,8 +33,6 @@ Node* createMinimalBST(vector<int> arr, int low, int high) {
 	node ->left = createMinimalBST(arr, low, mid - 1);
 	node->right = createMinimalBST(arr, mid + 1, high);
 	return node;
-
-
 }
 
 

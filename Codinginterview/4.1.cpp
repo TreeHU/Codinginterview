@@ -1,4 +1,4 @@
-
+                                                                                                     
 #include <vector>
 #include <iostream>
 #include <queue>
@@ -11,7 +11,7 @@ public:
 	int V;	// number of vertices
 	vector<int>* adj;  //adjacency list 
 
-	Graph(int V);
+	Graph(int V); 
 	void addEdge(int x, int y);
 	bool isRoute(int x, int y);
 };
