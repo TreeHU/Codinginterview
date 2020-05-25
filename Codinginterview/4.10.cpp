@@ -37,6 +37,8 @@ bool checktraverser(Node* r1, Node* r2) {
 	else {
 		for (int i = 0; i < ar1.size(); i++) {
 			if (ar1[i] != ar2[i]) {
+				ar1.clear();
+				ar2.clear();
 				return false;
 			}
 		}
@@ -46,6 +48,10 @@ bool checktraverser(Node* r1, Node* r2) {
 
 bool traverser(Node* root1, Node* root2) {
 	cout << "check traverser3"<< endl;
+
+	if (root1 == NULL) {
+		return NULL;
+	}
 	
 	if (root1->data == root2->data) {
 		if (checktraverser(root1, root2)) {
@@ -72,7 +78,7 @@ int main() {
 
 	Node* root2 = new Node(4);
 	root2->left = new Node(8);
-	root2->right = new Node(9);
+	root2->right = new Node(10);
 
 
 	bool ans = traverser(root, root2);
