@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bitset>
 using namespace std;
 
 
@@ -51,9 +52,11 @@ int updateBit(int n, int m, int i, int j){
 
 int main() {
 
-	
+	int num = 1775;
+	cout << (num && 1) << endl;
 
-	
+	int n = 1775;
+	cout << bitset<32>(n) << endl;
 
 
 
