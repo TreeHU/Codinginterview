@@ -77,6 +77,7 @@ int flipBit(unsigned int a)
 */
 
 
+//1锅掳 规过 
 int findLongestSequence(vector <int> seq) {
 	//cout << "3" << endl;
 	int maxsq = 1;
@@ -101,7 +102,6 @@ int findLongestSequence(vector <int> seq) {
 	}
 	return maxsq;
 }
-
 
 
 vector<int> getSequences(int n) {
@@ -144,8 +144,43 @@ int longestSequence(int n) {
 }
 
 
+//2锅掳 规过
+int flipBit(unsigned int a) {
+
+	if (~a == 0) {
+		return 8 * sizeof(int);
+	}
+	int currLen = 0, prevLen = 0, maxLen = 0;
+	while (a!= 0) {
+		if ((a & 1) == 1) {
+			currLen++;
+		}
+		else if ((a & 1) == 0) {
+			prevLen = (a & 2) == 0 ? 0 : currLen;
+			currLen = 0;
+		}
+		maxLen = max(prevLen + currLen, maxLen);
+		cout << maxLen << endl;
+		a >>= 1;
+	}
+	return maxLen + 1;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
 int main()
 {
-	cout << "ans: " <<longestSequence(1775) << endl;
+	//cout << "ans: " <<longestSequence(1775) << endl;
+	cout << "ans:" << flipBit(1775) << endl;
 	return 0;
 }
