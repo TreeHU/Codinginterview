@@ -168,6 +168,9 @@
     <ClCompile Include="5.8.cpp">
       <Filter>소스 파일\chapter 5</Filter>
     </ClCompile>
+    <ClCompile Include="chapter 1_test.cpp">
+      <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3.1_FixedMultiStack.h">
