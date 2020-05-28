@@ -268,12 +268,17 @@ int main() {
 	//checkoverlab(st);
 	//cout << check(st) << endl;
 	
+	/*
 	vector<string> words = { "abcde", "hello", "apple", "kite", "padle" };
 	for (string word : words) {
 		cout << word << string(": ") << boolalpha << isUniqueChars_noDS(word) << endl;
 	}
+	*/
 
-
+	string ss = "jel";
+	for (char c : ss) {
+		cout << c << endl;
+	}
 
 	return 0;
 }
