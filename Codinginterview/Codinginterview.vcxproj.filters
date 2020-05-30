@@ -180,6 +180,9 @@
     <ClCompile Include="1.3_1.cpp">
       <Filter>소스 파일\chapter 1</Filter>
     </ClCompile>
+    <ClCompile Include="1.4_1.cpp">
+      <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3.1_FixedMultiStack.h">
