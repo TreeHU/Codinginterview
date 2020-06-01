@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cctype>
+#include <bitset>
 using namespace std;
 
 
@@ -63,6 +64,78 @@ bool checkPallrondrom(string st) {
 }
 
 
+int bitvector(string st) {
+	int count = 0;
+	bitset<128> bit;
+	//int bit = 0; // bitset ÀÌ¿ë
+	int forbit = 0;
+	int arr[127] = { 0, };
+	for (int i = 0; i < st.size(); i++) {
+		if (st[i] == ' ') {
+			
+		}
+		else {
+			count++;
+		}
+	}
+	if (count % 2) {
+		//È¦¼ö 
+		
+		int oddindex = 0;
+		for (int j = 0; j < st.size(); j++) {
+			if (st[j] == ' ') {
+
+			}
+			else {
+				arr[st[j] - '0']++;
+			}
+		}
+		for (int k = 0; k < 128; k++) {
+			if (arr[k] == 1) {
+				oddindex = k;
+			}
+		}
+
+		for (int n = 0; n < 128; n++) {
+			if (arr[n] > 0) {
+				bit |= (1 << n) ;
+			}
+		}
+
+		forbit |= (1 << oddindex);
+
+		if ((bit &  (forbit - 1))) {
+			return false;
+		}
+		return true;
+
+	}
+	else {
+		//Â¦¼ö
+		for (int j = 0; j < st.size(); j++) {
+			if (st[j] == ' ') {
+
+			}
+			else {
+				arr[st[j] - '0']++;
+			}
+		}
+		for (int k = 0; k < 128; k++) {
+			if (arr[k] % 2) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+
+
+
+}
+
+
+
 
 int main() {
 	cout << sizeof(string) << endl;
@@ -74,8 +147,10 @@ int main() {
 	}
 
 
-	bool ans = checkPallrondrom(st);
-	cout << ans << endl;
+	//bool ans = checkPallrondrom(st);
+	
+	
+	//cout << ans << endl;
 
 
 

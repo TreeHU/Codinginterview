@@ -183,6 +183,24 @@
     <ClCompile Include="1.4_1.cpp">
       <Filter>소스 파일\chapter 1</Filter>
     </ClCompile>
+    <ClCompile Include="1.4_2.cpp">
+      <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.5_1.cpp">
+      <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.6.cpp">
+      <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.7.cpp">
+      <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.8.cpp">
+      <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
+    <ClCompile Include="1.9.cpp">
+      <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3.1_FixedMultiStack.h">

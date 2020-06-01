@@ -259,7 +259,7 @@ int main() {
 	// 임의로 해결하긴 했지만 충돌의 가능성이 있음
 	//tosolve_collision();
 
-	//체이닝 기번
+	//체이닝 기법
 	//chaining();
 
 	string st = "ssss";
