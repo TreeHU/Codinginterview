@@ -28,6 +28,9 @@
     <Filter Include="소스 파일\chapter 5">
       <UniqueIdentifier>{b5b3d845-3324-4feb-9ab5-0fd09d8d222f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chapter 8">
+      <UniqueIdentifier>{7634a677-8306-4f9f-8934-e607636f9584}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.1.cpp">
@@ -200,6 +203,21 @@
     </ClCompile>
     <ClCompile Include="1.9.cpp">
       <Filter>소스 파일\chapter 1</Filter>
+    </ClCompile>
+    <ClCompile Include="8.1.cpp">
+      <Filter>소스 파일\chapter 8</Filter>
+    </ClCompile>
+    <ClCompile Include="8.2.cpp">
+      <Filter>소스 파일\chapter 8</Filter>
+    </ClCompile>
+    <ClCompile Include="8.3.cpp">
+      <Filter>소스 파일\chapter 8</Filter>
+    </ClCompile>
+    <ClCompile Include="8.4.cpp">
+      <Filter>소스 파일\chapter 8</Filter>
+    </ClCompile>
+    <ClCompile Include="8.5.cpp">
+      <Filter>소스 파일\chapter 8</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
