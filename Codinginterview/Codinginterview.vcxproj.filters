@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\chapter 8">
       <UniqueIdentifier>{7634a677-8306-4f9f-8934-e607636f9584}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chapter 10">
+      <UniqueIdentifier>{80e0a852-861b-4cbf-96ae-dc2569f9560a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.1.cpp">
@@ -227,6 +230,12 @@
     </ClCompile>
     <ClCompile Include="8.7_1.cpp">
       <Filter>소스 파일\chapter 8</Filter>
+    </ClCompile>
+    <ClCompile Include="mergesort.cpp">
+      <Filter>소스 파일\chapter 10</Filter>
+    </ClCompile>
+    <ClCompile Include="mergesort2.cpp">
+      <Filter>소스 파일\chapter 10</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
