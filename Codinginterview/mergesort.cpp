@@ -7,7 +7,7 @@ using namespace std;
 
 
 
-void merge(int array[], int helper[], int low, int middle, int high) {
+void merge(int * array, int * helper, int low, int middle, int high) {
 	for (int i = low; i <= high; i++) {
 		helper[i] = array[i];
 	}
@@ -31,12 +31,10 @@ void merge(int array[], int helper[], int low, int middle, int high) {
 		array[current + i] = helper[helperLeft + i];
 	}
 
-	for (int i = 0; i < 7; i++) {
-		cout << array[i] << ",";
-	}
+
 
 }
-void mergesort(int array[], int helper[], int low, int high) {
+void mergesort(int * array, int * helper, int low, int high) {
 	if (low < high) {
 		int middle = (low + high) / 2;
 		mergesort(array, helper, low, middle);
@@ -46,15 +44,19 @@ void mergesort(int array[], int helper[], int low, int high) {
 }
 
 
-void mergesort(int array[]) {
-	int* helper = new int[sizeof(array)];
-	mergesort(array, helper, 0, sizeof(array) - 1);
+void mergesort(int * array) {
+	int* helper = new int[7];
+	mergesort(array, helper, 0, 6);
 }
 
 int main(void) {
-	int array[] = {7,6,5,4,3,2,1 };
+	int array[7] = {7,6,5,4,3,2,1 };
 
 	mergesort(array);
 
+
+	for (int i = 0; i < 7; i++) {
+		cout << array[i] << ",";
+	}
 	return 0;
 }
