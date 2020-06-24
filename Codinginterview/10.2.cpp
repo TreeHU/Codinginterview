@@ -24,5 +24,13 @@ int main()
 		cout << "key : " << it->first << " " << "value : " << it->second << '\n';
 	}
 
+	string st[] = { "hello", "world" };
+	map<string, string> test;
+	test[st[0]].append(st[1]);
+
+	cout << test.find("hello") ->second<< endl;
+
+
+
 	return 0;
 }

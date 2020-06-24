@@ -34,6 +34,9 @@
     <Filter Include="소스 파일\chapter 10">
       <UniqueIdentifier>{80e0a852-861b-4cbf-96ae-dc2569f9560a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chapter 11">
+      <UniqueIdentifier>{419264e1-b4fe-4b4e-a46f-59f5b6d6fc4d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.1.cpp">
@@ -247,6 +250,30 @@
       <Filter>소스 파일\chapter 10</Filter>
     </ClCompile>
     <ClCompile Include="10.3.cpp">
+      <Filter>소스 파일\chapter 10</Filter>
+    </ClCompile>
+    <ClCompile Include="10.4.cpp">
+      <Filter>소스 파일\chapter 10</Filter>
+    </ClCompile>
+    <ClCompile Include="11.1.cpp">
+      <Filter>소스 파일\chapter 11</Filter>
+    </ClCompile>
+    <ClCompile Include="10.5.cpp">
+      <Filter>소스 파일\chapter 10</Filter>
+    </ClCompile>
+    <ClCompile Include="10.6.cpp">
+      <Filter>소스 파일\chapter 10</Filter>
+    </ClCompile>
+    <ClCompile Include="10.9.cpp">
+      <Filter>소스 파일\chapter 10</Filter>
+    </ClCompile>
+    <ClCompile Include="10.10.cpp">
+      <Filter>소스 파일\chapter 10</Filter>
+    </ClCompile>
+    <ClCompile Include="protest.cpp">
+      <Filter>소스 파일\chapter 11</Filter>
+    </ClCompile>
+    <ClCompile Include="10.11.cpp">
       <Filter>소스 파일\chapter 10</Filter>
     </ClCompile>
   </ItemGroup>

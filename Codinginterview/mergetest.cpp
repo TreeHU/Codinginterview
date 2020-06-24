@@ -1,25 +1,54 @@
-#include<iostream>
-#include <map>
-#include<algorithm>
+#include <iostream> 
+#include<cstdio>
 using namespace std;
 
 
+int h;
+int w;
+int matrix[500][500] = { 0 };
+
+void input() {
+	cin >> h >> w;
+
+}
+
+int main() {
+	input();
+	int stack;
+	int flag = -1;
+	int col = 0;
+	int cnt = 0;
+
+
+	for (int i = 0; i < w; i++) {
+		cin >> stack;
+		if (stack == 0) continue;
+		int cnt = 0;
+		for (int j = h-1; ; h--) {
+			matrix[j][i] = 1;
+			cnt++;
+
+			if(cnt == stack) break;
+		}
+		
+	}
+
+	for (int j = n - 1; n >= 0; n--) {
+		for (int i = 0; i < m; i++) {
+			if (flag >= 0 && matrix[j][i] == 1) {
+				cnt += (i - flag - 1);
+				flag = -1;
+			}
+			else if (flag == -1 && matrix[j][i] == 1) {
+				flag = i;
+			}
+		}
+		flag = -1;
+	}
 
 
 
-//C++에서는 배열을 함수로 전달할 때 배열의 길이를 같이 전달해야함
 
+	return cnt;
 
-
-int main(void) {
-	map<string, string> mymap;
-	map<string, string>::iterator it;
-	
-	string wordArr[100] = { "cat", "dog", "tac", "god", "act" };
-	string st[2] = { "st1","st2" };
-	mymap[wordArr[0]].append(st[0]);
-
-	cout << mymap.find("cat")->second << endl;
-
-	return 0;
 }
