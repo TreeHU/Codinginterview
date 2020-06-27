@@ -37,6 +37,9 @@
     <Filter Include="소스 파일\chapter 11">
       <UniqueIdentifier>{419264e1-b4fe-4b4e-a46f-59f5b6d6fc4d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chapter 12">
+      <UniqueIdentifier>{6f7c4711-3f11-4229-8fac-e41c9eef44c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.1.cpp">
@@ -275,6 +278,36 @@
     </ClCompile>
     <ClCompile Include="10.11.cpp">
       <Filter>소스 파일\chapter 10</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassAndInheritance.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="static binding.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="dynamic binding.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="virtual destructor.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="Templete.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="12.1.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="12.2 reverse.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="12.3.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="12.8.cpp">
+      <Filter>소스 파일\chapter 12</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
