@@ -40,6 +40,9 @@
     <Filter Include="소스 파일\chapter 12">
       <UniqueIdentifier>{6f7c4711-3f11-4229-8fac-e41c9eef44c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\chaper 16">
+      <UniqueIdentifier>{de2940e4-35d4-4d07-8355-d25a911d48ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.1.cpp">
@@ -308,6 +311,12 @@
     </ClCompile>
     <ClCompile Include="12.8.cpp">
       <Filter>소스 파일\chapter 12</Filter>
+    </ClCompile>
+    <ClCompile Include="16.1.cpp">
+      <Filter>소스 파일\chaper 16</Filter>
+    </ClCompile>
+    <ClCompile Include="test12.cpp">
+      <Filter>소스 파일\chapter 11</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
